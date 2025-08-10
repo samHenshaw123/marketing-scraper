@@ -36,6 +36,6 @@ class Database:
         try:
             self.client.close()
             print("Database connection closed.")
-        except Exception as e:
+        except pymongo.errors.PyMongoError as e:
             print(f"Error closing connection: {e}")
             

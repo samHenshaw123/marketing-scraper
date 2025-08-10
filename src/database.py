@@ -5,7 +5,10 @@ import os
 class Database:
     def __init__(self):
         load_dotenv()
-        self.client = MongoClient(os.getenv('MONGO_URI'))
+        mongo_uri = os.getenv('MONGO_URI')
+        if not mongo_uri:
+            raise ValueError("MONGO_URI environment variable is not set or is empty.")
+        self.client = MongoClient(mongo_uri)
         self.db = self.client["marketing_scraper"]
         if self.db is not None:
             print("Database connection established successfully.")

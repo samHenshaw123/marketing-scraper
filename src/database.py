@@ -19,7 +19,7 @@ class Database:
             result = self.collection.insert_one(tyre_data)
             print(f"Data inserted with id: {result.inserted_id}")
             return result.inserted_id
-        except Exception as e:
+        except pymongo.errors.PyMongoError as e:
             print(f"Error inserting data: {e}")
             return None
         

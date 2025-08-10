@@ -28,7 +28,7 @@ class Database:
             tyres = list(self.collection.find())
             print(f"Retrieved {len(tyres)} tyre records.")
             return tyres
-        except Exception as e:
+        except pymongo.errors.PyMongoError as e:
             print(f"Error retrieving data: {e}")
             return []
     

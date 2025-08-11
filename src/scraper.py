@@ -2,7 +2,7 @@ import requests
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 class Scraper:
-        
+
     def scrape_national_tyre_data(self, national_url):
         parsed_url = urlparse(national_url)
         base_url = f"{parsed_url.scheme}://{parsed_url.netloc}"
@@ -80,3 +80,5 @@ class Scraper:
         except requests.exceptions.RequestException as e:
             print(f"Error fetching data from {black_circles_url}: {e}")
             return None
+
+

@@ -36,6 +36,3 @@ def generate_black_circles_urls(targets):
                 full_url = f"{base_url}/{size}"
                 urls.append(full_url)
     return urls
-
-print(generate_national_urls(TARGETS))
-print(generate_black_circles_urls(TARGETS))

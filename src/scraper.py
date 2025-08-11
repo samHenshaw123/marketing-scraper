@@ -67,7 +67,7 @@ class Scraper:
                     "size": size,
                     "price": price.get("data-price", None),
                     "brand": brand.get("title", None),
-                    "pattern": pattern.text.strip(brand.get("title", None)).strip(),
+                    "pattern": pattern.text.replace(brand.get("title", ""), "").strip(),
                     "fuel_rating": fuel_rating,
                     "wet_grip_rating": wet_grip_rating,
                     "noise_rating": noise_rating,

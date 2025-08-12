@@ -40,11 +40,6 @@ This project is a Python-based web scraper tailored for extracting tyre specific
    pip install -r requirements.txt
    ```
 
-### Configuration
-
-- Update your MongoDB connection string in `config.py` or as an environment variable, depending on your project setup.
-- Adjust scraping URLs and parameters in the sites script as needed.
-
 ### Running the Scraper
 
 ```sh
@@ -70,12 +65,6 @@ You can find the CSV export in [`output/tyre_data_20250812_162349.csv`](output/t
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request.
-
----
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ---
 

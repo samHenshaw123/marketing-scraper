@@ -57,7 +57,7 @@ The script will fetch tyre specification data and save it to your MongoDB databa
 
 ## Database Structure
 
-The scraper stores data in a MongoDB collection named `tyres`. You can find the exported MongoDB structure in [`database_structure.json`](database_structure.json).
+The scraper stores data in a MongoDB collection named `tyres`. You can find the exported MongoDB structure in [`schema-marketing_scraper-tyres-mongoDBJSON.json`](schema-marketing_scraper-tyres-mongoDBJSON.json).
 
 ---
 
@@ -84,7 +84,7 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for more 
 Repository: [https://github.com/samHenshaw123/marketing-scraper](https://github.com/samHenshaw123/marketing-scraper)
 
 Exports:
-- [database_structure.json](database_structure.json)
+- [schema-marketing_scraper-tyres-mongoDBJSON.json](schema-marketing_scraper-tyres-mongoDBJSON.json)
 - [tyres_export.csv](tyres_export.csv)
 
 ---

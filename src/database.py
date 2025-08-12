@@ -24,7 +24,7 @@ class Database:
             print(f"Error inserting data: {e}")
             return None
         
-    def get_all_tyres(self):
+    def fetch_all_tyre_data(self):
         try:
             tyres = list(self.collection.find())
             print(f"Retrieved {len(tyres)} tyre records.")

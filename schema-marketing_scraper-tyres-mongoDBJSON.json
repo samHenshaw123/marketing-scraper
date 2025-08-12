@@ -1,0 +1,57 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "_id",
+      "brand",
+      "pattern",
+      "price",
+      "size",
+      "url"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "brand": {
+        "bsonType": "string"
+      },
+      "fuel_efficiency_rating": {
+        "bsonType": [
+          "string",
+          "null"
+        ]
+      },
+      "fuel_rating": {
+        "bsonType": "string"
+      },
+      "grip_rating": {
+        "bsonType": [
+          "string",
+          "null"
+        ]
+      },
+      "noise_rating": {
+        "bsonType": "string"
+      },
+      "pattern": {
+        "bsonType": "string"
+      },
+      "price": {
+        "bsonType": "string"
+      },
+      "season": {
+        "bsonType": "string"
+      },
+      "size": {
+        "bsonType": "string"
+      },
+      "url": {
+        "bsonType": "string"
+      },
+      "wet_grip_rating": {
+        "bsonType": "string"
+      }
+    }
+  }
+}

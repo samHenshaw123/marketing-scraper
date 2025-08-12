@@ -63,7 +63,7 @@ The scraper stores data in a MongoDB collection named `tyres`. You can find the 
 
 ### CSV File
 
-You can find the CSV export in [`tyres_export.csv`](tyres_export.csv).
+You can find the CSV export in [`output/tyre_data_20250812_151047.csv`](output/tyre_data_20250812_151047.csv).
 
 ---
 
@@ -85,6 +85,6 @@ Repository: [https://github.com/samHenshaw123/marketing-scraper](https://github.
 
 Exports:
 - [schema-marketing_scraper-tyres-mongoDBJSON.json](schema-marketing_scraper-tyres-mongoDBJSON.json)
-- [tyres_export.csv](tyres_export.csv)
+- [output/tyre_data_20250812_151047.csv](output/tyre_data_20250812_151047.csv)
 
 ---

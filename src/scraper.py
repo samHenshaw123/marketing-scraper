@@ -29,7 +29,7 @@ def scrape_national_tyre_data(national_url):
                 "season": tyre.get("data-tyre-season", None),
                 "brand": tyre.get("data-brand", None),
                 "grip_rating": tyre.get("data-grip", None),
-                "fuel_efficiency_rating": tyre.get("data-fuel", None),
+                "fuel_rating": tyre.get("data-fuel", None),
                 "pattern": details[0].text.strip(),
                 "size": details[1].text.strip(),
             }
@@ -62,7 +62,7 @@ def scrape_black_circles_tyre_data(black_circles_url):
             brand = container.find("div", class_="tyre-logo").find("img")
             pattern = container.find("span", class_="tyreNameWrap")
             fuel_rating = container.find("div", class_="fuel-rating").find("b").text
-            wet_grip_rating = container.find("div", class_="wet-rating").find("b").text
+            grip_rating = container.find("div", class_="wet-rating").find("b").text
             noise_rating = container.find("div", class_="noise-rating").find("b").text
         
             data = {
@@ -72,7 +72,7 @@ def scrape_black_circles_tyre_data(black_circles_url):
                 "brand": brand.get("title", None),
                 "pattern": pattern.text.replace(brand.get("title", ""), "").strip(),
                 "fuel_rating": fuel_rating,
-                "wet_grip_rating": wet_grip_rating,
+                "grip_rating": grip_rating,
                 "noise_rating": noise_rating,
             }
             
